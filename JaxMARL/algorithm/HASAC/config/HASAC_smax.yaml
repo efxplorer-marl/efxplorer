@@ -1,0 +1,56 @@
+defaults:
+- _self_
+- override hydra/job_logging: disabled
+- override hydra/hydra_logging: disabled
+
+"ENV_NAME": "HeuristicEnemySMAX"
+"MAP_NAME": "3s5z_vs_3s6z"
+"ENV_KWARGS":
+  "see_enemy_actions": True
+  "walls_cause_death": True
+  "attack_mode": "closest"
+"OBS_WITH_AGENT_ID": True
+
+"HIDDEN_SIZE": 128
+"NUM_LAYERS": 2
+
+"SHARE_PARAMS": False
+"FIXED_ORDER": False
+"FIXED_ALPHA": True
+"ALPHA_INIT": 0.1
+
+"GAMMA": 0.99
+"TAU": 0.005
+"TARGET_ENTROPY_RATIO": 0.05
+"ALPHA_MIN": 0.0001
+"ALPHA_MAX": 1.0
+"GUMBEL_TEMP": 2.0
+
+"N_STEP": 1
+"USE_HUBER": False
+"HUBER_DELTA": 10.0
+
+"ACTOR_LR": 0.0005
+"CRITIC_LR": 0.0004
+"ALPHA_LR": 0.0003
+"MAX_GRAD_NORM": 0.5
+
+"TOTAL_TIMESTEPS": 3e7
+"NUM_ENVS": 64
+"NUM_STEPS": 128
+"NUM_EPOCHS": 300
+"BUFFER_SIZE": 40000
+"BUFFER_BATCH_SIZE": 256
+"LEARNING_STARTS": 50000
+
+"SEED": 0
+"WANDB_MODE": "disabled"
+"PROJECT": "JaxMARL"
+"ENTITY": ""
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false

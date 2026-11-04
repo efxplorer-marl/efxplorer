@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.log
+
+# Virtual envs
+.venv/
+venv/
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Hydra / runs
+**/outputs/
+**/multirun/
+
+wandb/
+outputs/
+multirun/

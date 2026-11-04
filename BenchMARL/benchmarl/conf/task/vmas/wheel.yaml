@@ -1,0 +1,14 @@
+defaults:
+  - vmas_wheel_config
+  - _self_
+
+
+max_steps: 600
+n_agents: 4
+line_length: 1
+line_mass: 10
+desired_velocity: 0.2
+x_semidim: 0.6
+y_semidim: 0.6
+boundary_collision_penalty: -0.1
+min_collision_distance: 0.005

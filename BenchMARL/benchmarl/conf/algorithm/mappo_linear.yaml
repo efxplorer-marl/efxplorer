@@ -1,0 +1,27 @@
+defaults:
+  - mappo_linear_config
+  - _self_
+
+share_param_critic: True
+clip_epsilon: 0.15
+entropy_coef: 0.0
+critic_coef: 0.5
+loss_critic_type: "l2"
+lmbda: 0.9
+scale_mapping: "biased_softplus_1.0"
+use_tanh_normal: True
+minibatch_advantage: False
+
+intrinsic_lambda: 1.0
+intrinsic_reward_type: "tdd"
+intrinsic_reward_scale: 0.1
+agent_feature_up_to_velocity: False
+extrinsic_only: False
+
+use_tdd: True
+tdd_latent_dim: 128
+tdd_output_dim: 32
+tdd_learning_rate: 0.002
+tdd_discount: 0.9
+tdd_batch_size: 512
+tdd_learning_epochs: 16

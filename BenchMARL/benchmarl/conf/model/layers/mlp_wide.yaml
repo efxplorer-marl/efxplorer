@@ -1,0 +1,14 @@
+
+name: mlp_wide
+
+num_cells: [512, 512]
+layer_class: torch.nn.Linear
+
+activation_class: torch.nn.Tanh
+activation_kwargs: null
+
+norm_class: null
+norm_kwargs: null
+
+num_feature_dims: 1
+
