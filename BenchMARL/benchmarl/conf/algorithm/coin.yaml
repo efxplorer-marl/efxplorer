@@ -1,0 +1,27 @@
+defaults:
+  - coin_config
+  - _self_
+
+mixing_embed_dim: 32
+delay_value: True
+loss_function: "l2"
+
+beta1: 0.0005
+beta2: 0.0005
+beta: 0.5
+
+predictor_lr: 0.01
+predict_net_dim: 64
+
+influence_exp_decay: False
+influence_exp_decay_rate: 0.9
+influence_exp_decay_cycle: 100000
+influence_exp_decay_stop: 0.00001
+
+curiosity_exp_decay: False
+curiosity_exp_decay_rate: 0.9
+curiosity_exp_decay_cycle: 50000
+curiosity_exp_decay_stop: 0.0
+
+target_update_interval: 200
+

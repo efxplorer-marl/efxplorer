@@ -1,0 +1,39 @@
+defaults:
+- _self_
+- override hydra/job_logging: disabled
+- override hydra/hydra_logging: disabled
+LR: 0.0003
+VF_COEF: 0.5
+NUM_ENVS: 200
+NUM_STEPS: 256
+TOTAL_TIMESTEPS: 3e7
+FC_DIM_SIZE: 64
+GRU_HIDDEN_DIM: 256
+UPDATE_EPOCHS: 10
+NUM_MINIBATCHES: 4
+GAMMA: 0.99
+GAE_LAMBDA: 0.95
+CLIP_EPS: 0.3
+SCALE_CLIP_EPS: false
+ENT_COEF: 0.015
+ANNEAL_ENT: false
+ENT_COEF_END: 0.001
+MAX_GRAD_NORM: 0.6
+ANNEAL_LR: true
+ENV_NAME: MPE_simple_tag_scripted_prey_6v2
+SEED: 0
+"ENV_KWARGS": {
+  "max_steps": 256,
+  "score_function": "min",
+  "reward_mode": "dense",
+  "dense_reward_scale": 1.0,
+}
+
+WANDB_MODE: disabled
+SPARSE_REWARD: false
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false

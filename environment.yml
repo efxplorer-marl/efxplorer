@@ -1,0 +1,49 @@
+name: efxplorer
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10.0
+  - pip
+  - setuptools=80.9.0
+  - wheel
+  - pip:
+      - numpy==1.26.4
+      - six
+
+      - torch==2.9.1
+      - torchvision==0.24.1
+      - torchrl==0.10.1
+      - av==13.1.0
+
+      - jax==0.4.38
+      - jaxlib==0.4.38
+      - jax-cuda12-pjrt==0.4.38
+      - jax-cuda12-plugin==0.4.38
+      - flax==0.10.0
+      - chex==0.1.90
+      - optax==0.2.5
+      - distrax==0.1.5
+      - brax==0.10.3
+      - mujoco==3.1.3
+      - gymnax==0.0.9
+      - safetensors==0.6.2
+
+      - pyglet==1.5.27
+      - gym==0.26.2
+      - gym-notices==0.0.8
+
+      - tqdm==4.67.1
+      - hydra-core==1.3.2
+      - omegaconf==2.3.0
+
+      - flashbax==0.1.0
+      - pettingzoo==1.25.0
+      - gymnasium==1.0.0
+
+      - wandb==0.22.3
+      - moviepy==2.2.1
+      - matplotlib==3.10.7
+      - pillow==10.4.0
+      - scipy==1.12.0

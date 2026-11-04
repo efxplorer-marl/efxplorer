@@ -1,0 +1,6 @@
+{
+  "include": ["MAPPO", "IPPO", "HASAC", "core"],
+  "extraPaths": ["."],
+  "pythonVersion": "3.10",
+  "typeCheckingMode": "basic"
+}

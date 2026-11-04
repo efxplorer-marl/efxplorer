@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jaxmarl"
+version = "0.1.0"
+description = "JAX Multi-Agent RL with custom environments for EFXPLORER"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "jax>=0.4.20",
+    "jaxlib>=0.4.20",
+    "flax>=0.7.0",
+    "optax>=0.1.7",
+    "distrax>=0.1.5",
+    "chex>=0.1.7",
+    "gymnax>=0.0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "hydra-core>=1.3.0",
+    "omegaconf>=2.3.0",
+    "wandb>=0.15.0",
+    "safetensors>=0.4.0",
+    "matplotlib>=3.7.0",
+    "imageio>=2.31.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jaxmarl*", "core*", "algorithm*"]

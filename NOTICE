@@ -1,0 +1,15 @@
+EFXPLORER
+
+Copyright (c) 2026 The EFXPLORER Authors. Licensed under the MIT License (LICENSE).
+
+This repository includes modified copies of the following projects:
+
+- BenchMARL/: BenchMARL, Copyright (c) Meta Platforms, Inc. and affiliates.
+  MIT License (BenchMARL/LICENSE).
+- JaxMARL/: JaxMARL, Copyright 2023 FLAIR. Apache License 2.0 (JaxMARL/LICENSE).
+  Files in JaxMARL/ were modified and extended by the EFXPLORER authors, 2026.
+- BenchMARL/vmas_patch/: scenario files from VMAS (VectorizedMultiAgentSimulator),
+  Copyright (c) ProrokLab. GNU GPL v3 (BenchMARL/vmas_patch/LICENSE).
+  Modified by the EFXPLORER authors, 2026.
+
+Original copyright and license notices of these projects are retained in their files.

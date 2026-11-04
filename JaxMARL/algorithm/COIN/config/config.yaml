@@ -1,0 +1,11 @@
+"NUM_SEEDS": 1
+"SEED": 0
+
+"HYP_TUNE": False
+
+"ENTITY": ""
+"PROJECT": ""
+"WANDB_MODE": "disabled"
+"WANDB_LOG_ALL_SEEDS": False
+
+"SAVE_PATH": null

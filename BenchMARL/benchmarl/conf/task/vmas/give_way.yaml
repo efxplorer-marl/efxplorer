@@ -1,0 +1,15 @@
+defaults:
+  - vmas_give_way_config
+  - _self_
+
+
+max_steps: 600
+mirror_passage: False
+observe_rel_pos: True
+done_on_completion: False
+final_reward: 1.0
+agent_collision_penalty: -0.01
+passage_collision_penalty: -0.01
+obstacle_collision_penalty: -0.01
+pos_shaping_factor: 2.0
+

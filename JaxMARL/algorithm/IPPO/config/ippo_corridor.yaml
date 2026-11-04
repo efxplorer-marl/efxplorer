@@ -1,0 +1,34 @@
+LR: 0.001
+NUM_ENVS: 200
+NUM_STEPS: 256
+TOTAL_TIMESTEPS: 3e7
+FC_DIM_SIZE: 64
+GRU_HIDDEN_DIM: 256
+UPDATE_EPOCHS: 10
+NUM_MINIBATCHES: 4
+GAMMA: 0.99
+GAE_LAMBDA: 0.95
+CLIP_EPS: 0.3
+SCALE_CLIP_EPS: false
+ENT_COEF: 0.015
+VF_COEF: 0.5
+MAX_GRAD_NORM: 0.6
+ACTIVATION: tanh
+ANNEAL_LR: true
+ENV_NAME: MPE_simple_corridor_v3
+SEED: 84
+"ENV_KWARGS": {
+  "num_agents": 8,
+  "action_type": "Discrete",
+  "max_steps": 256,
+  "local_ratio": 0.5,
+}
+
+WANDB_MODE: disabled
+SPARSE_REWARD: false
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false
